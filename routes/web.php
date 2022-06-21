@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\PaginaController;
-use App\Models\Pagina;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $pagina = Pagina::find(1);
-    return view('index', compact('pagina'));
+    return view('welcome', compact('pagina'));
 });
 
 
